@@ -1,0 +1,102 @@
+.Navbar {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #8294c4;
+
+    h1{
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      font-size: 23px;  
+
+      a{
+        color: #000000;
+        text-decoration: none;
+        color: rgb(255, 255, 200);
+
+        &:hover{
+          color: #cbcbcc;
+          transition: 0.2s;
+
+        }
+        &:active{
+          color: chocolate;
+        }
+      }
+    }
+
+    &__btn {
+      display: flex;
+      gap: 20px;
+
+      .btn1 {
+        text-decoration: none;
+        padding: 8px 10px;
+        font-size: 17px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        cursor: pointer;
+        background-color: beige;
+        &:hover{
+          background-color:rgb(233, 233, 163);
+        }
+
+        i{
+          font-size: 20px;
+        }
+      }
+
+      .menu-btn{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 955px) {
+  .Navbar{
+    h1{
+      font-size: 32px;
+      font-weight: 600;
+    }
+    ul{
+      display: none;
+    }
+
+    .btn1{
+      display: none;
+    }
+
+    .menu-btn{
+      display: inline;
+
+      i{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:540px) {
+  .Navbar{
+    &__box{
+      padding: 20px 70px;
+    }
+
+    h1{
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.Login{
+    @apply w-full h-[100vh] flex justify-center bg-indigo-200 items-center;
+}
+
+.FormLog{
+    @apply w-[430px] flex justify-center gap-7 flex-col bg-indigo-500 items-center p-[20px] rounded-md;
+
+    .Input, .btnLog{
+        @apply w-[300px] h-[50px] text-[18px]
+    }
+
+    .btnLog{
+        @apply text-[23px] mb-[10px] bg-lime-600 text-white hover:text-white active:bg-green-500 shadow-md active:focus:scale-90;
+    }
+
+    h1{
+        @apply font-semibold text-[40px] text-white;
+        
+    }
+
+    label{
+        @apply flex gap-[10px] pr-[20px];
+        
+        i{
+            @apply flex justify-center items-center text-[40px] text-black
+        }
+    }
+
+}
